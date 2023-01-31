@@ -1,0 +1,22 @@
+#For Linux
+
+nvm ls-remote      !check versions online
+nvm install        !install version 18.11.9 , latest....etc
+nvm ls             !check installed versions local
+nvm use            !to use different node version
+nvm uninstall      !deactivate version 18.11.9....etc
+cd ~/.nvm/versions/node  ->  sudo rm -rf 18.11.9      !completly uninstall
+
+https://github.com/nvm-sh/nvm
+
+-----------------------------------------------------------------------------------------------------------
+
+#For Windows
+
+nvm list available     !check versions online
+nvm install            !install version 18.11.9....etc
+nvm list               !check installed versions local
+nvm use                !to use different node version
+nvm uninstall          !deactivate version 18.11.9....etc
+
+https://github.com/coreybutler/nvm-windows
