@@ -1,0 +1,3 @@
+1.  
+On Node code OR in the env of app service when you connect to Mongo db insted of 'mongodb://localhost:27017/...' you write 'mongodb://mongodb:27017/...'
+where 'mongo' is the name of mongodb service in the container.

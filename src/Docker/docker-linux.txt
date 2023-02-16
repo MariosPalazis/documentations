@@ -7,6 +7,7 @@ sudo docker images           !The default docker images will show all top level 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+docker ps                     !Only shows running containers. To see all containers, use the --all (or -a) flag
 docker container ls           !List containers running , -a all containers
 docker container restart      !Restart one or more containers
 docker container rm           !Remove one or more containers
