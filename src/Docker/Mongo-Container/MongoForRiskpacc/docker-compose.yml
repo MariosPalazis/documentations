@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mongodb_container_riskpacc:
+    image: mongo:4
+    container_name: mongodb_riskpacc
+    environment:
+      MONGO_INITDB_DATABASE: Riskpacc
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data_container_riskpacc:/data/db
+    restart: always
+
+volumes:
+  mongodb_data_container_riskpacc:

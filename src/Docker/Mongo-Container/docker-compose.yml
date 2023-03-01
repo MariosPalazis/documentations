@@ -1,17 +1,17 @@
-version: '3.7'
+version: '3'
 services:
   mongodb_container:
-    image: mongo:4.4.18
+    image: mongo:6
     container_name: mongodb
     environment:
-      MONGO_INITDB_DATABASE: RiskPACC
+      MONGO_INITDB_DATABASE: TestAuth
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: rootpassword
     ports:
       - 27017:27017
     volumes:
-      - mongodb_data_container:/data/db
+      - mongodb_data_container_testauth:/data/db
     restart: always
 
 volumes:
-  mongodb_data_container:
+  mongodb_data_container_testauth:
